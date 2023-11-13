@@ -22,21 +22,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         img2 = findViewById(R.id.img2);
         img3 = findViewById(R.id.img3);
         img4 = findViewById(R.id.img4);
+        img1.setOnClickListener(this);
+        img2.setOnClickListener(this);
+        img3.setOnClickListener(this);
+        img4.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        
         if (view.getId() == R.id.img1)
         {
             Intent hotel = new Intent(this, activity_hotel.class);
             startActivity(hotel);
         } else if (view.getId() == R.id.img2) {
-            
+            Intent restaurant = new Intent(this, activity_restaurant.class);
+            startActivity(restaurant);
         } else if (view.getId() == R.id.img3) {
-            
+            Intent transport = new Intent(this, activity_transport.class);
+            startActivity(transport);
         } else if (view.getId() == R.id.img4) {
-            
+            Intent cine = new Intent(this, activity_cine.class);
+            startActivity(cine);
         }
 
     }
