@@ -14,10 +14,14 @@
         android:layout_height="wrap_content"
         android:rowCount="2"
         android:columnCount="2">
-        <ImageView android:background="@drawable/hotelicon"></ImageView>
-        <ImageView android:background="@drawable/restauranticon"></ImageView>
-        <ImageView android:background="@drawable/transporticon"></ImageView>
-        <ImageView android:background="@drawable/cinemaicon"></ImageView>
+        <ImageView android:background="@drawable/hotelicon"
+            android:id="@+id/img1"></ImageView>
+        <ImageView android:background="@drawable/restauranticon"
+            android:id="@+id/img2"></ImageView>
+        <ImageView android:background="@drawable/transporticon"
+            android:id="@+id/img3"></ImageView>
+        <ImageView android:background="@drawable/cinemaicon"
+            android:id="@+id/img4"></ImageView>
     </GridLayout>
 
 

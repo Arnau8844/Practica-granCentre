@@ -5,31 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    ImageView img1;
+    ImageView img2;
+    ImageView img3;
+    ImageView img4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageButton bt1 = findViewById(R.id.bt1);
-        ImageButton bt2 = findViewById(R.id.bt2);
-        ImageButton bt3 = findViewById(R.id.bt3);
-        ImageButton bt4 = findViewById(R.id.bt4);
+        img1 = findViewById(R.id.img1);
+        img2 = findViewById(R.id.img2);
+        img3 = findViewById(R.id.img3);
+        img4 = findViewById(R.id.img4);
     }
 
     @Override
     public void onClick(View view) {
         
-        if (view.getId() == R.id.bt1)
+        if (view.getId() == R.id.img1)
         {
 
-        } else if (view.getId() == R.id.bt2) {
+        } else if (view.getId() == R.id.img2) {
             
-        } else if (view.getId() == R.id.bt3) {
+        } else if (view.getId() == R.id.img3) {
             
-        } else if (view.getId() == R.id.bt4) {
+        } else if (view.getId() == R.id.img4) {
             
         }
 
