@@ -5,18 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center"
-    >
+    android:orientation="vertical"
 
+    >
     <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:rowCount="2"
-        android:columnCount="2">
-        <ImageView android:background="@drawable/hotelicon"></ImageView>
-        <ImageView android:background="@drawable/restauranticon"></ImageView>
-        <ImageView android:background="@drawable/transporticon"></ImageView>
-        <ImageView android:background="@drawable/cinemaicon"></ImageView>
+        android:columnCount="2"
+        >
+
+        <ImageButton
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/restauranticon"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageButton>
+
     </GridLayout>
 
 
