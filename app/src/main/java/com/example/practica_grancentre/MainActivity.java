@@ -2,6 +2,7 @@ package com.example.practica_grancentre;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         
         if (view.getId() == R.id.img1)
         {
-
+            Intent hotel = new Intent(this, activity_hotel.class);
+            startActivity(hotel);
         } else if (view.getId() == R.id.img2) {
             
         } else if (view.getId() == R.id.img3) {
