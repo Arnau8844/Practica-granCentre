@@ -17,6 +17,8 @@
         <ImageView android:background="@drawable/restauranticon"></ImageView>
         <ImageView android:background="@drawable/transporticon"></ImageView>
         <ImageView android:background="@drawable/cinemaicon"></ImageView>
+        <ImageView android:background="@drawable/cinemaicon"></ImageView>
+
     </GridLayout>
 
 
