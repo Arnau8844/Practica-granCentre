@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:rowCount="2"
         android:columnCount="2">
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
+        <ImageView android:background="@drawable/hotelicon"></ImageView>
+        <ImageView android:background="@drawable/restauranticon"></ImageView>
+        <ImageView android:background="@drawable/transporticon"></ImageView>
+        <ImageView android:background="@drawable/cinemaicon"></ImageView>
     </GridLayout>
 
 
