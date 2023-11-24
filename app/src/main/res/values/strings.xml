@@ -2,11 +2,14 @@
     <string name="app_name">Practica-granCentre</string>
     <string name="hotelTitle">MILLORS HOTELS GRANOLLERS</string>
     <string name="restaurantTitle">MILLORS RESTAURANTS DE GRANOLLERS</string>
-    <string name="restaruant1">Can Forquilla</string>
+    <string name="restaruant1">Ànima de Granollers</string>
+    <string name="direccioRestaurant1">Calle Girona 4, 08402, Granollers (Barcelona)</string>
+    <string name="telefonRestaurant1">938 70 42 91</string>
     <string name="restaruant2">Kodama</string>d
-    <string name="direccioRestaurant2">Carrer del Lliri, 32, 08402, Granollers (Barcelona)</string>
+    <string name="direccioRestaurant2">Calle del Lliri, 32, 08402, Granollers (Barcelona)</string>
     <string name="telefonRestaurant2">934 63 77 56</string>
     <string name="restaruant3">Romabella Granollers</string>
     <string name="direccioRestaurant3">Calle Del Sastre, Numero 4, 08401, Granollers (Barcelona)</string>
     <string name="telefonRestaurant3">931 27 21 96</string>
+    <string name="paginaWeb">Pàgina web</string>
 </resources>
