@@ -24,9 +24,13 @@
         <activity
             android:name=".activity_hotel"
             android:exported="false" />
+        <activity android:name=".DetallesPelicula"/>
+        <activity android:name=".VisorImagen"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

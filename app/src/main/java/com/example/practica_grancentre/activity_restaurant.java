@@ -31,6 +31,10 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
     TextView telefon2;
     TextView telefon3;
     TextView[] telefons;
+    TextView paginaWeb1;
+    TextView paginaWeb2;
+    TextView paginaWeb3;
+    TextView[] paginasWeb;
     String[] textTelefons;
     SpannableString lineaDireccio;
     SpannableString lineaTelefon;
@@ -62,9 +66,14 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
         textTelefons = new String[]{  this.getResources().getString(R.string.telefonRestaurant1),
                 this.getResources().getString(R.string.telefonRestaurant2),
                 this.getResources().getString(R.string.telefonRestaurant3)};
+        paginaWeb1 = (TextView) findViewById(R.id.url1);
+        paginaWeb2 = (TextView) findViewById(R.id.url2);
+        paginaWeb3 = (TextView) findViewById(R.id.url3);
+        paginasWeb = new TextView[]{paginaWeb1,paginaWeb2,paginaWeb3};
         //iniciar web
         putLinesBelowDireccions();
         putLinesBelowPhones();
+        putLinesBelowWeb();
         iniciarSpinner();
         restaruantImg = new String[]{
                 "https://asset1.zankyou.com/images/wervice-card-big/88b/d528/1050/800/w/730001/-/1639147371.jpg",
@@ -78,6 +87,9 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
         telefon1.setOnClickListener(this);
         telefon2.setOnClickListener(this);
         telefon3.setOnClickListener(this);
+        paginaWeb1.setOnClickListener(this);
+        paginaWeb2.setOnClickListener(this);
+        paginaWeb3.setOnClickListener(this);
     }
 
     private void filterWithTheSpinner() {
@@ -171,6 +183,14 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
         }
     }
 
+    private void putLinesBelowWeb() {
+        for (int i = 0; i < paginasWeb.length; i++) {
+            lineaDireccio = new SpannableString("Pàgina web");
+            lineaDireccio.setSpan(new UnderlineSpan(), 0, lineaDireccio.length(), 0);
+            paginasWeb[i].setText(lineaDireccio);
+        }
+    }
+
     private void carregarImgs() {
         for (int i = 0; i < img.length; i++){
             Glide.with(this)
@@ -220,6 +240,27 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
         {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", telefon3.getText().toString(), null));
             startActivity(intent);
+        }
+        else if (view.getId() == R.id.url1)
+        {
+            String url = "https://www.facebook.com/people/L%C3%80nima-de-Granollers/100075909457722/";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        else if (view.getId() == R.id.url2)
+        {
+            String url = "https://www.espaikodama.com/";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        else if (view.getId() == R.id.url3)
+        {
+            String url = "https://www.tripadvisor.es/Restaurant_Review-g670666-d24130815-Reviews-Romabella_Granollers-Granollers_Catalonia.html";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         }
     }
 }
