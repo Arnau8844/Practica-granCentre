@@ -21,8 +21,8 @@ public class activity_hotel extends AppCompatActivity implements View.OnClickLis
     ImageView img1, img2, img3;
     ImageView[] img;
     String[] hotelImg;
-    String phoneNumber;
-
+    TextView url1,url2,url3;
+    TextView direccio1,direccio2,direccio3;
     LinearLayout linearLayoutHotel1;
     LinearLayout linearLayoutHotel2;
     LinearLayout linearLayoutHotel3;
@@ -38,7 +38,24 @@ public class activity_hotel extends AppCompatActivity implements View.OnClickLis
         img1 = this.findViewById(R.id.img1);
         img2 = this.findViewById(R.id.img2);
         img3 = this.findViewById(R.id.img3);
+
         img = new ImageView[]{img1,img2,img3};
+
+        direccio1 = this.findViewById(R.id.direccio1);
+        direccio2 = this.findViewById(R.id.direccio2);
+        direccio3 = this.findViewById(R.id.direccio3);
+
+        direccio1.setOnClickListener(this);
+        direccio2.setOnClickListener(this);
+        direccio3.setOnClickListener(this);
+
+        url1 = this.findViewById(R.id.url1);
+        url2 = this.findViewById(R.id.url2);
+        url3 = this.findViewById(R.id.url3);
+
+        url1.setOnClickListener(this);
+        url2.setOnClickListener(this);
+        url3.setOnClickListener(this);
 
         hotelImg = new String[]{
                 "https://www.ahstatic.com/photos/6410_ho_00_p_1024x768.jpg",
@@ -153,11 +170,70 @@ public class activity_hotel extends AppCompatActivity implements View.OnClickLis
             // Agrega esta línea para iniciar la actividad de marcado telefónico
             startActivity(dialIntent);
         }
+        if (view.getId() == R.id.textViewPhoneNumberHotel2) {
+            TextView textViewPhoneNumber = findViewById(R.id.textViewPhoneNumberHotel2);
+            String tel = textViewPhoneNumber.getText().toString();
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + tel));
+
+            // Agrega esta línea para iniciar la actividad de marcado telefónico
+            startActivity(dialIntent);
+        }
+        if (view.getId() == R.id.textViewPhoneNumberHotel3) {
+            TextView textViewPhoneNumber = findViewById(R.id.textViewPhoneNumberHotel3);
+            String tel = textViewPhoneNumber.getText().toString();
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(Uri.parse("tel:" + tel));
+
+            // Agrega esta línea para iniciar la actividad de marcado telefónico
+            startActivity(dialIntent);
+        }
     }
 
 
     @Override
     public void onClick(View view) {
-
+        if (view.getId() == R.id.url1)
+        {
+            String url = "https://www.tripadvisor.es/Hotel_Review-g670666-d565469-Reviews-Ibis_Barcelona_Montmelo_Granollers-Granollers_Catalonia.html";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        if (view.getId() == R.id.url2)
+        {
+            String url = "https://www.tripadvisor.es/Hotel_Review-g1934194-d233398-Reviews-Hotel_Augusta_Barcelona_Valles-Vilanova_del_Valles_Granollers_Catalonia.html";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        if (view.getId() == R.id.url3)
+        {
+            String url = "https://www.tripadvisor.es/Hotel_Review-g670666-d1165383-Reviews-B_B_HOTEL_Barcelona_Granollers-Granollers_Catalonia.html";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        if (view.getId() == R.id.direccio1)
+        {
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/place/Ibis/@41.5709633,2.2666904,19z/data=!4m6!3m5!1s0x12a4b87d039725d1:0xad16bad27bd9318f!8m2!3d41.5711911!4d2.2653171!16s%2Fg%2F1tf8h70p?entry=ttu");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        }
+        if (view.getId() == R.id.direccio2)
+        {
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/place/Hotel+Augusta+Vall%C3%A8s/@41.5661912,2.2798328,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4b86cdc101d13:0x93474c5a4f5514b3!8m2!3d41.5661872!4d2.2824077!16s%2Fg%2F1thzxr3z?entry=ttu");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        }
+        if (view.getId() == R.id.direccio3)
+        {
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/place/B%26B+HOTEL+Barcelona+Granollers/@41.614038,2.3013105,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4c87f300dca4f:0x398b22a42af9af5b!8m2!3d41.614034!4d2.3038854!16s%2Fg%2F1tdv2qr6?entry=ttu");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        }
     }
 }
