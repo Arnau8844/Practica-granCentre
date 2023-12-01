@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent restaurant = new Intent(this, activity_restaurant.class);
             startActivity(restaurant);
         } else if (view.getId() == R.id.img3) {
-            Intent transport = new Intent(this, activity_transport.class);
+            Intent transport = new Intent(this, activity_parking.class);
             startActivity(transport);
         } else if (view.getId() == R.id.img4) {
             Intent cine = new Intent(this, activity_cine.class);

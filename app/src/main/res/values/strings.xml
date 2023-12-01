@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Practica-granCentre</string>
     <string name="hotelTitle">MILLORS HOTELS GRANOLLERS</string>
+    <string name="hotel1Title"><a href="https://www.tripadvisor.es/Hotel_Review-g670666-d565469-Reviews-Ibis_Barcelona_Montmelo_Granollers-Granollers_Catalonia.html">1. ibis Barcelona Montmelo-Granollers</a></string>
+    <string name="hotel1ContentDescription">Hotel 1 ibis Barcelona Montmelo-Granollers</string>
+    <string name="direccioHotel1">Poligono Industrial, C. Can Gordi 1 Pol. Ind, Carrer de Can Catala, 08403 Granollers, Barcelona</string>
+    <string name="telefonHotel1">935 68 90 60</string>
+    <string name="hotel2Title"><a href="https://www.tripadvisor.es/Hotel_Review-g1934194-d233398-Reviews-Hotel_Augusta_Barcelona_Valles-Vilanova_del_Valles_Granollers_Catalonia.html">2. Hotel Augusta Barcelona Vallès</a></string>
+    <string name="direccioHotel2">AP-7, Km 12 5, 08410, Barcelona</string>
+    <string name="telefonHotel2">938 45 60 50</string>
+    <string name="hotel3Title"><a href="https://www.tripadvisor.es/Hotel_Review-g670666-d1165383-Reviews-B_B_HOTEL_Barcelona_Granollers-Granollers_Catalonia.html">3. B&amp;B Hotel Barcelona Granollers</a></string>
+    <string name="direccioHotel3">Carrer Valldoriolf, 1, 08520 Granollers, Barcelona</string>
+    <string name="telefonHotel3">938 40 71 32</string>
     <string name="restaurantTitle">MILLORS RESTAURANTS DE GRANOLLERS</string>
     <string name="restaruant1">Ànima de Granollers</string>
     <string name="direccioRestaurant1">Calle Girona 4, 08402, Granollers (Barcelona)</string>
@@ -12,4 +22,5 @@
     <string name="direccioRestaurant3">Calle Del Sastre, Numero 4, 08401, Granollers (Barcelona)</string>
     <string name="telefonRestaurant3">931 27 21 96</string>
     <string name="paginaWeb">Pàgina web</string>
+    <string name="parkingTitle">MILLORS PARKINGS GRANOLLERS</string>
 </resources>

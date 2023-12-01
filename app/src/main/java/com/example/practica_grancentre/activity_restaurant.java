@@ -1,7 +1,5 @@
 package com.example.practica_grancentre;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
@@ -76,7 +76,7 @@ public class activity_restaurant extends AppCompatActivity implements View.OnCli
         putLinesBelowWeb();
         iniciarSpinner();
         restaruantImg = new String[]{
-                "https://asset1.zankyou.com/images/wervice-card-big/88b/d528/1050/800/w/730001/-/1639147371.jpg",
+                "https://www.ahstatic.com/photos/6410_ho_00_p_1024x768.jpg",
                 "https://app.pidepaya.com/wp-content/uploads/185658612_1929000710592237_2196111832220563407_n.jpg",
                 "https://media-cdn.tripadvisor.com/media/photo-s/08/bb/5c/f5/italo-s-pizza.jpg"};
         carregarImgs();

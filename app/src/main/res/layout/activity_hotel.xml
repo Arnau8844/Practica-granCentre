@@ -5,31 +5,203 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_hotel"
-    >
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/azul"
-        >
-
+        android:background="@color/azulFuerte"
+        android:padding="20dp">
+        <Spinner
+            android:id="@+id/itemList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true">
+        </Spinner>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hotelTitle"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            ></TextView>
-
+            android:textAlignment="textEnd"
+            >
+        </TextView>
     </LinearLayout>
-
-
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:columnCount="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="20dp"
+            android:id="@+id/hotel1"
+            android:tag="4 Estrellas">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/hotel1ContentDescription"
+                android:id="@+id/imgHotel1"
+                ></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel1Title"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paginaWeb"
+                    android:textColor="@color/azul"
+                    android:id="@+id/url1"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direccioHotel1"
+                    android:textColor="@color/azul"
+                    android:id="@+id/direccio1"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewPhoneNumberHotel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:onClick="makePhoneCall"
+                    android:text="@string/telefonHotel1"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:padding="10dp"
+                    />
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="4"
+                    android:theme="@style/RatingBar"
+                    ></RatingBar>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="20dp"
+            android:id="@+id/hotel2"
+            android:tag="3 Estrellas"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgHotel2">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel2Title"
 
-
-
-    </GridLayout>
-
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paginaWeb"
+                    android:textColor="@color/azul"
+                    android:id="@+id/url2"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direccioHotel2"
+                    android:textColor="@color/azul"
+                    android:id="@+id/direccio2"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewPhoneNumberHotel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:onClick="makePhoneCall"
+                    android:text="@string/telefonHotel2"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:padding="10dp"
+                    />
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    android:theme="@style/RatingBar"
+                    ></RatingBar>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="20dp"
+            android:columnCount="1"
+            android:id="@+id/hotel3"
+            android:tag="2 Estrellas"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgHotel3"
+                >
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hotel3Title"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paginaWeb"
+                    android:textColor="@color/azul"
+                    android:id="@+id/url3"
+                    ></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direccioHotel3"
+                    android:textColor="@color/azul"
+                    android:id="@+id/direccio3"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewPhoneNumberHotel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:onClick="makePhoneCall"
+                    android:text="@string/telefonHotel3"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:padding="10dp"
+                    />
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="2"
+                    android:theme="@style/RatingBar"
+                    ></RatingBar>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
